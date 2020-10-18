@@ -1,0 +1,18 @@
+[package]
+name = "lyratray"
+version = "0.1.0"
+authors = ["Alexander Lutsai <s.lyra@ya.ru>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.3", features = ["macros", "time", "rt-multi-thread", "fs", "io-util"] }
+chrono = { version = "0.4" }
+scan_fmt = "0.2"
+
+[dependencies.swayipc]
+version = "2.7"
+features = ["async"]
+
+[features]
